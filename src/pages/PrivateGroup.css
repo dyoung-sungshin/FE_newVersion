@@ -1,0 +1,72 @@
+.private-group-access {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+}
+
+.title {
+  margin-top: 120px;
+  font-size: 30px; /* Font Size */
+  font-weight: bold; /* Weight */
+  color: #282828; /* black */
+  margin-bottom: 0px;
+  line-height: 1.2; /* Line Height (30px -> 36px) */
+  letter-spacing: -0.03em; /* Letter Spacing */
+}
+
+.description {
+  font-size: 15px; /* Font Size */
+  color: #8d8d8d; /* gray500 */
+  font-weight: bold; /* Weight */
+  margin-bottom: 45px;
+  line-height: 1.5; /* Line Height (18px -> 27px) */
+  letter-spacing: -0.03em; /* Letter Spacing */
+}
+
+.form {
+  width: 100%;
+  max-width: 400px; /* 입력 필드와 버튼의 최대 너비 */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.password-label {
+  width: 100%;
+  font-size: 16px; /* Font Size */
+  color: #696868; /* gray500 */
+  margin-bottom: 10px;
+  text-align: left; /* 왼쪽 정렬 */
+  font-weight: bold; /* Weight */
+  line-height: 1.5; /* Line Height (16px -> 24px) */
+  letter-spacing: -0.03em; /* Letter Spacing */
+}
+
+.password-input {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px; /* Font Size */
+  margin-bottom: 45px;
+  border: 1px solid #dddddd; /* gray200 */
+  border-radius: 5px;
+  box-sizing: border-box; /* 패딩과 테두리를 포함한 너비 계산 */
+}
+
+.submit-button {
+  width: 100%; /* 입력 필드와 버튼의 너비를 동일하게 설정 */
+  padding: 10px;
+  font-size: 16px; /* Font Size */
+  background-color: #282828; /* black */
+  color: #ffffff; /* white */
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  box-sizing: border-box; /* 패딩과 테두리를 포함한 너비 계산 */
+}
+
+.submit-button:hover {
+  background-color: #8d8d8d; /* gray500 */
+  font-weight: bold; /* Weight */
+}

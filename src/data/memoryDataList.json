@@ -1,0 +1,73 @@
+{
+    "currentPage": 1,
+    "totalPages": 5,
+    "totalItemCount": 50,
+    "data": [
+      {
+        "id": 1,
+        "nickname": "JohnDoe",
+        "title": "Trip to the Mountains",
+        "imageUrl": "https://example.com/images/mountain_trip.jpg",
+        "tags": ["hiking", "nature"],
+        "location": "Rocky Mountains",
+        "moment": "2024-02-21",
+        "isPublic": true,
+        "likeCount": 120,
+        "commentCount": 15,
+        "createdAt": "2024-02-22T07:47:49.803Z"
+      },
+      {
+        "id": 2,
+        "nickname": "JaneSmith",
+        "title": "Family Gathering",
+        "imageUrl": "https://example.com/images/family_gathering.jpg",
+        "tags": ["family", "celebration"],
+        "location": "New York",
+        "moment": "2024-01-15",
+        "isPublic": false,
+        "likeCount": 200,
+        "commentCount": 25,
+        "createdAt": "2024-02-22T07:47:49.803Z"
+      },
+      {
+        "id": 3,
+        "nickname": "TravelLover",
+        "title": "Beach Vacation",
+        "imageUrl": "https://example.com/images/beach_vacation.jpg",
+        "tags": ["beach", "summer"],
+        "location": "Maldives",
+        "moment": "2024-03-05",
+        "isPublic": true,
+        "likeCount": 300,
+        "commentCount": 40,
+        "createdAt": "2024-03-06T07:47:49.803Z"
+      },
+      {
+        "id": 4,
+        "nickname": "Foodie123",
+        "title": "Best Brunch Ever",
+        "imageUrl": "https://example.com/images/brunch.jpg",
+        "tags": ["food", "brunch"],
+        "location": "Los Angeles",
+        "moment": "2024-02-10",
+        "isPublic": true,
+        "likeCount": 150,
+        "commentCount": 18,
+        "createdAt": "2024-02-22T07:47:49.803Z"
+      },
+      {
+        "id": 5,
+        "nickname": "AdventureSeeker",
+        "title": "Skydiving Experience",
+        "imageUrl": "https://example.com/images/skydiving.jpg",
+        "tags": ["adventure", "extreme sports"],
+        "location": "Dubai",
+        "moment": "2024-03-12",
+        "isPublic": true,
+        "likeCount": 450,
+        "commentCount": 55,
+        "createdAt": "2024-03-13T07:47:49.803Z"
+      }
+    ]
+  }
+  

@@ -1,0 +1,483 @@
+/* Spoqa Han Sans Neo 폰트 사용 */
+@import url("https://cdn.jsdelivr.net/gh/spoqa/spoqa-han-sans/css/SpoqaHanSansNeo.css");
+
+body {
+  font-family: "Spoqa Han Sans Neo", sans-serif;
+}
+
+/* 메인 컨테이너 스타일 */
+.memory-group-detail {
+  margin: 20px;
+  padding: 20px;
+  font-family: "Spoqa Han Sans Neo", sans-serif;
+  min-height: calc(100vh - 40px);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* 헤더 섹션 */
+.memory-group-header {
+  display: flex;
+  align-items: flex-start;
+  padding-bottom: 20px;
+  position: relative;
+}
+
+.memory-group-image {
+  width: 220px;
+  height: 220px;
+  border-radius: 15px;
+  object-fit: cover;
+  margin-right: 30px;
+}
+
+.memory-group-info {
+  flex-grow: 1;
+  position: relative;
+}
+
+.memory-group-meta {
+  font-size: 14px;
+  color: #000;
+  margin-bottom: 8px;
+}
+
+.memory-group-visibility {
+  color: #8d8d8d;
+}
+
+.memory-group-title-container {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.memory-group-title {
+  font-size: 36px;
+  font-weight: bold;
+  margin: 0;
+}
+
+.memory-group-submeta {
+  font-size: 16px;
+  color: #282828;
+  margin-left: 20px;
+}
+
+.memory-group-description {
+  margin: 10px 0;
+  font-size: 16px;
+  color: #333;
+}
+
+.memory-group-badges-and-like {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+  min-height: 100px; /* 배지가 없더라도 공감 버튼이 동일한 위치에 있도록 고정된 높이 설정 */
+}
+
+.memory-group-badges-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* 배지 내용이 없을 때도 공감 버튼이 일관된 위치에 있도록 배지 섹션 중앙 정렬 */
+  min-height: 100px; /* 최소 높이를 설정하여 배지가 없더라도 공감 버튼 위치 고정 */
+}
+
+.memory-group-badges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.memory-badge {
+  background-color: #f5f5f5;
+  padding: 10px 15px;
+  border-radius: 40px;
+  margin-top: 13px;
+  font-size: 14px;
+  color: #282828;
+}
+
+.no-badge-message{
+  color:#8d8d8d;
+  margin-top:6px;
+  font-size: 15px;
+
+}
+
+.memory-group-send-like {
+  background-color: transparent;
+  color: #282828;
+  border: 1px solid #282828;
+  padding: 10px 13px;
+  border-radius: 5px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 15px;
+}
+
+.memory-send-like:hover {
+  background-color: #f4f4f4;
+}
+
+.memory-flower-icon {
+  width: 16px;
+  height: 16px;
+}
+
+/* 꽃 애니메이션 */
+.memory-like-container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.memory-flower-animation-container {
+  position: relative;
+  width: 100px; /* 원하는 크기로 설정 */
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.memory-flower-animation {
+  position: absolute;
+  width: 30px;
+  opacity: 0;
+  transform: translateY(0);
+  animation: flowerAnimation 2s ease-in-out forwards;
+}
+
+@keyframes flowerAnimation {
+  0% {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(-100px) scale(0.8);
+  }
+}
+
+
+/* 이미지 구분선 */
+.memory-image-divider {
+  margin-top: 50px;
+  border: none;
+  border-top: 1px solid #dddddd;
+  width: calc(100% + 240px);
+  position: relative;
+  left: -240px;
+}
+
+.memory-group-actions {
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: flex;
+  gap: 20px;
+}
+
+.memory-group-edit-button,
+.memory-group-delete-button {
+  background-color: transparent;
+  color: #282828;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.memory-group-edit-button:hover,
+.memory-group-delete-button:hover {
+  text-decoration: underline;
+}
+
+/* 추억 목록 섹션 */
+.memory-section {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  flex-grow: 1;
+}
+
+.memory-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  position: relative;
+  margin-right: 0; /* 오른쪽 여백을 없애서 맞추기 */
+}
+
+.memorysection-title {
+  font-size: 30px;
+  font-weight: bold;
+  color: #000;
+  text-align: center;
+  width: 100%;
+}
+
+.memory-upload-button {
+  background-color: #000;
+  color: #fff;
+  border: none;
+  padding: 10px 30px;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 16px;
+  position: absolute;
+  right: 0;
+  margin-right: 0 !important; /* 오른쪽 끝에 맞추기 */
+}
+
+/* 컨트롤 섹션 */
+.memory-controls {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
+  gap: 20px; /* 각 요소들 사이 간격 추가 */
+}
+
+/* 공개/비공개 버튼 스타일 */
+.memory-group-toggle {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px; /* 버튼들 사이 간격 */
+}
+
+.memory-toggle-button {
+  background-color: #fff;
+  border: 1px solid #ffffff; 
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 50px;
+  color: #282828;
+  font-size: 16px;
+  font-weight: bold;
+  transition: background-color 0.3s, color 0.3s;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  white-space: nowrap;
+}
+
+.memory-toggle-button.active {
+  background-color: #282828;
+  color: #fff;
+  border: 1px solid #282828;
+}
+
+/* 검색창을 넓게 확장하기 위한 설정 */
+.memory-search-container {
+  position: relative;
+  flex-grow: 2; /* 검색창 컨테이너가 가능한 공간을 대부분 차지 */
+  display: flex;
+  align-items: center;
+}
+
+.memory-search-field {
+  width: 100%; /* 검색창 필드가 부모 컨테이너에 맞게 최대한 확장 */
+  padding: 10px 20px 10px 40px;
+  border: 1px solid #eeeded;
+  border-radius: 5px;
+  outline: none;
+  font-size: 16px;
+  background-color: #fafafa;
+}
+
+/* 정렬 드롭다운은 고정된 크기를 유지 */
+.memory-sort-dropdown {
+  width: 120px;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 14px;
+  background-color: #fff;
+  color: #282828;
+}
+
+/* 돋보기 아이콘 위치 */
+.memory-search-icon {
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 20px;
+  height: 20px;
+  opacity: 0.5;
+}
+
+/* 추억 목록 */
+.memory-memories-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  width: 100%;
+  margin: 0; /* 목록이 양쪽으로 여백을 가지지 않도록 설정 */
+  padding: 0 !important; /* padding 제거 */
+  justify-content: space-between; /* 요소 간 공간을 동일하게 분배 */
+}
+
+.memory-item {
+  padding: 15px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: white;
+  transition: transform 0.2s ease-in-out;
+  width: calc(25% - 15px); /* 카드 하나가 한 줄에 4개 */
+  max-width: 100%; /* 요소가 컨테이너 너비를 넘지 않도록 설정 */
+}
+
+.memory-item:hover {
+  transform: translateY(-5px); /* hover 시 위로 살짝 올라가는 효과 */
+}
+
+.memory-item:nth-child(4n) {
+  margin-right: 0; /* 각 행의 마지막 요소에 오른쪽 여백을 없앰 */
+}
+
+@media (max-width: 1200px) {
+  /* 화면 크기가 줄어들 경우 두 개의 열로 나열되도록 설정 */
+  .memory-item {
+    width: calc(50% - 15px);
+  }
+}
+
+@media (max-width: 768px) {
+  /* 모바일 크기에서는 한 개의 열로 나열되도록 설정 */
+  .memory-item {
+    width: 100%;
+  }
+}
+
+.memory-image {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+/* 닉네임과 공개/비공개 */
+.memory-nickname-visibility {
+  font-size: 14px;
+  display: flex;
+  justify-content: flex-start;
+  color: #b8b8b8;
+  margin-bottom: 5px;
+}
+
+.memory-nickname {
+  color: #282828;
+}
+
+.nickname-separator {
+  margin-left: 10px;
+  margin-right: 10px;
+  color: #b8b8b8;
+}
+
+.memory-title {
+  font-size: 18px;
+  font-weight: bold;
+  margin: 5px 0;
+  text-align: left;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.memory-tags {
+  font-size: 12px;
+  color: #b8b8b8 !important;
+  margin-bottom: 10px;
+}
+
+/* 날짜와 공감/댓글 */
+.memory-date-meta {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 12px;
+  color: #282828;
+}
+
+.memory-date {
+  font-size: 12px;
+}
+
+.memory-meta {
+  display: flex;
+  gap: 15px;
+}
+
+.memory-like-count,
+.memory-comment-count {
+  margin-top: 7px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 15px;
+  color: #8d8d8d;
+}
+
+.memory-like-count img,
+.memory-comment-count img {
+  width: 17px;
+  height: 17px;
+}
+
+.memory-date {
+  font-size: 12px;
+  color: #aaa;
+}
+
+.memory-no-memories {
+  margin-top: 100px;
+  margin-bottom: 30px;
+  color: #8d8d8d;
+  text-align: center;
+  padding-bottom: 30px;
+}
+
+.memory-no-memories img {
+  height: 120px;
+  margin-bottom: 20px;
+}
+
+.memory-no-memories-text {
+  font-size: 18px;
+  color: #333;
+  line-height: 1.5;
+}
+
+.memory-second-upload-memory-button {
+  background-color: #000;
+  color: #fff;
+  border: none;
+  padding: 12px 37px;
+  width: 350px;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 16px;
+  margin-top: 100px;
+  margin-left: 10px;
+  margin-bottom: 20px;
+}

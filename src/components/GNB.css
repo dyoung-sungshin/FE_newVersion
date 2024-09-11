@@ -1,0 +1,38 @@
+.gnb {
+  display: flex;
+  justify-content: center; /* 로고를 가운데로 정렬 */
+  align-items: center;
+  padding: 20px 40px; /* 세로 크기를 늘리기 위해 padding 값을 조정 */
+  background-color: #ffffff; /* 배경색을 흰색으로 설정 */
+  position: relative; /* 버튼을 오른쪽으로 배치하기 위해 position을 relative로 설정 */
+}
+
+.gnb-logo {
+  flex: 1; /* 로고를 가운데로 위치시키기 위해 flex를 사용 */
+  display: flex;
+  justify-content: center; /* 로고를 가운데로 정렬 */
+  align-items: center;
+}
+
+.gnb-logo-img {
+  height: 45px; /* 로고 크기를 약간 더 키워서 GNB 크기에 맞춤 */
+}
+
+.gnb-create-group-button {
+  position: absolute; /* 버튼을 GNB 오른쪽에 고정하기 위해 absolute 사용 */
+  right: 80px; /* 오른쪽 여백 설정 */
+  background-color: #282828; /* black */
+  color: #FFFFFF; /* white */
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 16px;
+  padding: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.gnb-create-group-button:hover {
+  background-color: #8d8d8d; /* red */
+}

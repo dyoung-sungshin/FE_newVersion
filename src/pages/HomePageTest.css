@@ -1,0 +1,213 @@
+.home-page {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .group-section {
+    margin-top: 50px;
+  }
+  
+  .group-toggle {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 20px;
+    margin-left: 5%;
+    margin-right: 5%;
+    gap: 10px;
+  }
+  
+  .toggle-button {
+    background-color: #ffffff !important;
+    border: 1px solid #ffffff !important;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 50px;
+    color: #282828 !important;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  .toggle-button.active {
+    background-color: #282828 !important;
+    color: #ffffff !important;
+    border: 1px solid #282828 !important;
+  }
+  
+  .group-search-container {
+    position: relative;
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
+  }
+  
+  .search-icon {
+    position: absolute;
+    margin-left: 3px;
+    left: 10px;
+    width: 20px;
+    height: 20px;
+  }
+  
+  .group-search {
+    width: 100%;
+    padding: 10px 20px 10px 40px !important; /* 아이콘 공간 확보 */
+    border: 1px solid #eeeded !important;
+    border-radius: 5px !important;
+    outline: none;
+    box-sizing: border-box;
+    font-size: 16px;
+    background-color: #fafafa;
+  }
+  
+  .group-sort {
+    margin-left: 20px;
+    border: 1px solid #dddddd;
+    padding: 10px;
+    border-radius: 5px;
+    border-color: #282828 !important;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #ffffff;
+    color: #282828;
+  }
+  
+  .group-content {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .no-group {
+    margin-bottom: 20px;
+    color: #8d8d8d;
+  }
+  
+  .no-group img {
+    height: 100px;
+  }
+  
+  .create-group-button {
+    background-color: #282828;
+    color: #ffffff;
+    border: none;
+    padding: 15px 30px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+  
+  .create-group-button:hover {
+    background-color: #302f2f;
+  }
+  
+  /* 추가된 CSS */
+  .group-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+    width: 90%;
+    margin: 0 auto;
+  }
+  
+  .group-item {
+    background-color: #ffffff;
+    border: 1px solid #dddddd;
+    border-radius: 7px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: left;
+    padding: 15px;
+  }
+  
+  .group-item-header {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    font-size: 14px;
+    color: #888888;
+    margin-bottom: 10px;
+  }
+  
+  .group-days {
+    color: #282828;
+  }
+  
+  .group-visibility {
+    color: #8d8d8d;
+  }
+  
+  .separator {
+    margin: 0 5px;
+  }
+  
+  .group-item-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+  }
+  
+  .group-item-info {
+    padding: 10px 0;
+    width: 100%;
+  }
+  
+  .group-item-title {
+    font-size: 18px;
+    font-weight: bold;
+    color: #282828;
+    margin-bottom: 10px;
+  }
+  
+  .group-item-description {
+    font-size: 14px;
+    color: #8d8d8d;
+    margin-bottom: 10px;
+  }
+  
+  .group-item-meta {
+    display: flex;
+    justify-content: flex-start; /* 전체 메타 데이터를 왼쪽에 정렬 */
+    align-items: flex-start; /* 수직 정렬을 시작점으로 맞춤 */
+    width: 100%;
+    text-align: left; /* 텍스트 왼쪽 정렬 */
+    font-size: 14px;
+    color: #8d8d8d;
+  }
+  
+  .meta-item {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* 각 항목을 왼쪽에 정렬 */
+    margin-right: 20px; /* 각 메타 항목 간의 간격 조정 */
+  }
+  
+  
+  .group-meta-label {
+    margin-right: 10px;
+    margin-top:2px;
+    margin-bottom: 2px;
+    color: #b8b8b8; /* 색상값 변경 */
+    font-size: 12px; /* 폰트 크기 조정 */
+  }
+  
+  .group-meta-value {
+    color: #282828;
+    margin-top: 5px;
+    font-size: 14px; /* 폰트 크기 약간 조정 */
+    text-align: left; /* 왼쪽 정렬 */
+    display: flex;
+    align-items: center;
+    justify-content: flex-start; /* 왼쪽 정렬 유지 */
+  }
+  
+  
+  .flower-icon {
+    margin-right: 3px;
+  }
+  

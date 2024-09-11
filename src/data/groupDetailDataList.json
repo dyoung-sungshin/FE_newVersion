@@ -1,0 +1,114 @@
+{
+  "data": [
+    {
+      "id": 1,
+      "name": "First Group",
+      "imageUrl": "../assets/GroupImage.png",
+      "isPublic": true,
+      "likeCount": 1000,
+      "badges": ["badge2", "badge3", "badge5", "badge1"],
+      "postCount": 10,
+      "createdAt": "2023-02-20T07:47:49.803Z",
+      "introduction": "This is the first group."
+    },
+    {
+      "id": 2,
+      "name": "Second Group",
+      "imageUrl": "/images/group2.png",
+      "isPublic": false,
+      "likeCount": 200,
+      "badges": ["badge1", "badge2", "badge5"],
+      "postCount": 20,
+      "createdAt": "2024-02-21T06:45:30.803Z",
+      "introduction": "This is the second group."
+    },
+    {
+      "id": 3,
+      "name": "Third Group",
+      "imageUrl": "/images/group3.png",
+      "isPublic": false,
+      "likeCount": 100,
+      "badges": ["badge2", "badge5", "badge4", "badge3"],
+      "postCount": 5,
+      "createdAt": "2024-02-20T05:30:20.803Z",
+      "introduction": "This is the third group."
+    },
+    {
+      "id": 4,
+      "name": "Fourth Group",
+      "imageUrl": "/images/group4.png",
+      "isPublic": true,
+      "likeCount": 250,
+      "badges": ["badge4", "badge1"],
+      "postCount": 15,
+      "createdAt": "2024-02-19T04:25:10.803Z",
+      "introduction": "This is the fourth group."
+    },
+    {
+      "id": 5,
+      "name": "Fifth Group",
+      "imageUrl": "/images/group5.png",
+      "isPublic": true,
+      "likeCount": 300,
+      "badges": ["badge5", "badge1"],
+      "postCount": 25,
+      "createdAt": "2024-02-18T03:20:00.803Z",
+      "introduction": "This is the fifth group."
+    },
+    {
+      "id": 6,
+      "name": "Sixth Group",
+      "imageUrl": "/images/group6.png",
+      "isPublic": false,
+      "likeCount": 120,
+      "badges": ["badge4", "badge5"],
+      "postCount": 18,
+      "createdAt": "2024-02-17T02:15:50.803Z",
+      "introduction": "This is the sixth group."
+    },
+    {
+      "id": 7,
+      "name": "Seventh Group",
+      "imageUrl": "/images/group7.png",
+      "isPublic": true,
+      "likeCount": 350,
+      "badges": ["badge2", "badge3", "badge4", "badge1"],
+      "postCount": 30,
+      "createdAt": "2024-02-16T01:10:40.803Z",
+      "introduction": "This is the seventh group."
+    },
+    {
+      "id": 8,
+      "name": "Eighth Group",
+      "imageUrl": "/images/group8.png",
+      "isPublic": false,
+      "likeCount": 400,
+      "badges": ["badge4", "badge5", "badge2", "badge1", "badge3"],
+      "postCount": 35,
+      "createdAt": "2024-02-15T00:05:30.803Z",
+      "introduction": "This is the eighth group."
+    },
+    {
+      "id": 9,
+      "name": "Ninth Group",
+      "imageUrl": "/images/group9.png",
+      "isPublic": true,
+      "likeCount": 130,
+      "badges": ["badge1", "badge2", "badge3", "badge5", "badge4"],
+      "postCount": 12,
+      "createdAt": "2024-02-14T23:00:20.803Z",
+      "introduction": "This is the ninth group."
+    },
+    {
+      "id": 10,
+      "name": "Tenth Group",
+      "imageUrl": "/images/group10.png",
+      "isPublic": false,
+      "likeCount": 500,
+      "badges": ["badge1", "badge4", "badge5"],
+      "postCount": 40,
+      "createdAt": "2024-02-13T22:55:10.803Z",
+      "introduction": "This is the tenth group."
+    }
+  ]
+}
